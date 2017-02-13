@@ -7,9 +7,9 @@
 *
 */
 
+let $tabs;
 
-
-const fChangeTab = function () {
+const fChangeTab = function ( oEvent ) {
     oEvent.preventDefault();
     $tabs.parent().filter( ".active").removeClass( "active" );
     $( this ).parent().addClass( "active" );
@@ -21,10 +21,12 @@ const fChangeTab = function () {
 $( function () {
 
     // 1. link with rel=external
-    $( 'a[rel="external"]').attr( "target ", "_new" );
+    $( 'a[rel="external"]').attr( "target", "_new" );
 
     // 2. tab
-    $tabs = $( 'ul.nav.nav-tabs a').on( "click ", fChangeTab );
+    // $tabs = $( "ul.nav.nav-tabs a" );
+    // $tabs.on( "click", fChangeTab );
+    $tabs = $( 'ul.nav.nav-tabs a').on( "click", fChangeTab );
 
 
 
