@@ -1,4 +1,4 @@
-/* eric/katbiznis
+/* eric/meet-jquery
 *
 * /gulpfile.js - gulp tasks
 *
