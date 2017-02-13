@@ -14,7 +14,7 @@ const fChangeTab = function () {
     $tabs.parent().filter( ".active").removeClass( "active" );
     $( this ).parent().addClass( "active" );
     $( ".tab-content .tab-pane.active" ).removeClass( " ctive" );
-    $( `#${ $( this ).data( "tab-target" )}` )..addClass( "active" );
+    $( `#${ $( this ).data( "tab-target" )}` ).addClass( "active" );
 }
 
 //called when dom is loaded
